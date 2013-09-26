@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Leaflet Quick Start Guide Example</title>
+	<meta charset="utf-8" />
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="leaflet-0.6.2/leaflet.css" />
+	<!--[if lte IE 8]><link rel="stylesheet" href="leaflet-0.6.2/leaflet.ie.css" /><![endif]-->
+	<style>
+	#MaCarte {
+		width: 500px;
+		 height: 500px;
+		 margin:auto
+	 }
+	</style>
+	
+</head>
+<body>
+	<div id="MaCarte" ></div>
+
+	<script src="leaflet-0.6.2/leaflet.js"></script>
+	<script>
+ //Définir les coordonnées du centre de la carte et le seuil de zoom
+
+var map = L.map('MaCarte').setView([36.940,9.650], 8); 
+ // Ajouter le fond de carte
+
+L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+}).addTo(map); 
+ // Ajouter des markers
+
+L.marker([36.940,9.650]).addTo(map) .bindPopup("<b>Popup n°1</b>");
+
+L.marker([36.940,9.850]).addTo(map) .bindPopup("<b>Popup n°2</b>"); 
+
+	</script>
+</body>
+</html>

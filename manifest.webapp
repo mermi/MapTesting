@@ -1,0 +1,19 @@
+{
+  "name": "Map",
+  "description": "...",
+  "launch_path": "/testMap.html",
+  "developer": {
+    "name": "Mermi",
+    "url": "https://github.com/Mermi"
+  },
+  "locales": {
+    "en-US": {
+      "name": "MapTesting",
+      "description": "MapTesting"
+    }
+  },
+  "default_locale": "en-US",
+  "icons": {
+  },
+  "orientation": "portrait-primary"
+}
